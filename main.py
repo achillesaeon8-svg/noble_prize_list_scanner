@@ -48,6 +48,12 @@ def main():
 
 # OUTPUTS SETTINGS
 
-print('=' * 100)
-print("                                     EXAM RESULTS SUMMARY                    ")
-print("=" * 100)
+    print('=' * 100)
+    print("                                     EXAM RESULTS SUMMARY                    ")
+    print("=" * 100)
+
+    print(f'# QUESTION NO.1: WHAT IS THE MOST AWARDED GENDER AND BIRTH COUNTRY')
+    print(f"  • Most Awarded Gender: {top_gender}")
+    print(f"  • Most Awarded Birth Country: {top_country}\n")
+
+    
