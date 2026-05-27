@@ -48,9 +48,9 @@ def main():
 
 # OUTPUTS SETTINGS
 
-    print('=' * 100)
+    print('=' * 120)
     print("                                     EXAM RESULTS SUMMARY                    ")
-    print("=" * 100)
+    print("=" * 120)
 
     print(f'# QUESTION NO.1: WHAT IS THE MOST AWARDED GENDER AND BIRTH COUNTRY')
     print(f"  • Most Awarded Gender: {top_gender}")
@@ -62,15 +62,24 @@ def main():
     print(f"QUESTION NO. 3")
     print(f"  • Highest Female Proportion Combo: {max_female_dict}\n")
 
-    print(f"QUESTION NO. 4")
-    print(f"  • First Woman Winner: {first_woman_name}")
-    print(f"  • Award Category: {first_woman_category}\n")
+    print(f'QUESTION NO. 4')
+    print(f'  • First Woman Winner: {first_woman_name}')
+    print(f'  • Award Category: {first_woman_category}\n')
     
-    print(f"QUESTION NO. 5")
-    print(f"  • Total Repeat Winners Count: {len(repeat_list)}")
-    print(f"  • Repeat Winners List: {repeat_list}")
+    print(f'QUESTION NO.5: WHICH INDIVIDUALS OR ORGANIZATIONS HAVE WON MORE THAN ONE NOBEL PRIZE THROUGHOUT THE YEARS?')
 
-    print("=" * 100)
+    print(' ')
+
+    print(f'  • Total Repeat Winners Count: {len(repeat_list)}')
+
+    print(' ')
+
+    print(f'  • Repeat Winners List:')
+
+    for winner in repeat_list:
+        print(f'    - {winner}')
+
+    print("=" * 120)
 
 if __name__ == '__main__':
     main()
