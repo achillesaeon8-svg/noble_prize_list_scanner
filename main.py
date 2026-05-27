@@ -58,4 +58,7 @@ def main():
 
     print(f"QUESTION NO. 2")
     print(f"  • Decade with Highest US Ratio: {max_decade_usa}\n")
+
+    print(f"QUESTION NO. 3")
+    print(f"  • Highest Female Proportion Combo: {max_female_dict}\n")
     
