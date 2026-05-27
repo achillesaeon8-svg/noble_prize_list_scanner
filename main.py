@@ -40,5 +40,10 @@ def main():
 
     first_woman_name = str(female_winners['full_name'].values[0])
     first_woman_category = str(female_winners['category'].values[0])
-    
+
 # QUESTION NO.5: WHICH INDIVIDUALS OR ORGANIZATIONS HAVE WON MORE THAN ONE NOBEL PRIZE THROUGHOUT THE YEARS?
+
+    name_counts = np_list['full_name'].value_counts()
+    repeat_list = list(name_counts[name_counts > 1].index)
+
+    
