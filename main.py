@@ -61,4 +61,8 @@ def main():
 
     print(f"QUESTION NO. 3")
     print(f"  • Highest Female Proportion Combo: {max_female_dict}\n")
+
+    print(f"QUESTION NO. 4")
+    print(f"  • First Woman Winner: {first_woman_name}")
+    print(f"  • Award Category: {first_woman_category}\n")
     
