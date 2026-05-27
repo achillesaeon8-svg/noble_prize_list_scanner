@@ -66,3 +66,8 @@ def main():
     print(f"  • First Woman Winner: {first_woman_name}")
     print(f"  • Award Category: {first_woman_category}\n")
     
+    print(f"QUESTION NO. 5")
+    print(f"  • Total Repeat Winners Count: {len(repeat_list)}")
+    print(f"  • Repeat Winners List: {repeat_list}")
+    
+    print("=" * 100)
