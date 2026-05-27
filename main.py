@@ -13,7 +13,7 @@ def main():
 # QUESTION NO.1: WHAT IS THE MOST AWARDED GENDER AND BIRTH COUNTRY
 
     gender_counts = np_list['sex'].value_counts()
-    country_counts = np_list['birth_country']
+    country_counts = np_list['birth_country'].value_counts()
 
     top_gender = str(gender_counts.index[0])
     top_country = str(country_counts.index[0])
