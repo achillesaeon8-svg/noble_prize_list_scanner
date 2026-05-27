@@ -46,4 +46,8 @@ def main():
     name_counts = np_list['full_name'].value_counts()
     repeat_list = list(name_counts[name_counts > 1].index)
 
-    
+# OUTPUTS SETTINGS
+
+print('=' * 100)
+print("                                     EXAM RESULTS SUMMARY                    ")
+print("=" * 100)
