@@ -53,8 +53,14 @@ def main():
     print("=" * 120)
 
     print(f'# QUESTION NO.1: WHAT IS THE MOST AWARDED GENDER AND BIRTH COUNTRY')
-    print(f"  • Most Awarded Gender: {top_gender}")
-    print(f"  • Most Awarded Birth Country: {top_country}\n")
+
+    print(' ')
+
+    print(f'  • Most Awarded Gender: {top_gender}')
+
+    print(' ')
+    
+    print(f'  • Most Awarded Birth Country: {top_country}\n')
 
     print(f"QUESTION NO. 2")
     print(f"  • Decade with Highest US Ratio: {max_decade_usa}\n")
