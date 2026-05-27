@@ -20,6 +20,12 @@ def main():
 
 # QUESTION NO.2: WHICH DECADE HAD THE HIGHEST RATIO OF US-BORN NOBEL PRIZE WINNERS TO TOTAL WINNERS IN ALL CATEGORIES?
 
+    np_list['decade'] = (np_list['year'] // 10) * 10
+    np_list['usa_born_winner'] = np_list['birth_country'] == 'United States of America'
+
+    decade_usa_ratios = np_list.groupby('decade')['usa_born_winner'].mean()
+    max_decade_usa = int(decade_usa_ratios.idxmax())
+    
 # QUESTION NO.3: WHICH DECADE AND NOBEL PRIZE CATEGORY COMBINATION AHD THE HIGHEST PROPORTION OF FEMALE LAUREATS?
 
 # QUESTION NO.4: WHO WAS THE FIRST WOMAN TO RECEIVE A NOBEL PRIZE, AND IN WHAT CATEGORY?
