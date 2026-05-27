@@ -31,7 +31,14 @@ def main():
     np_list['is_female'] = np_list['sex'] == 'Female'
     female_proportions = np_list.groupby(['decade', 'category'])['is_female'].mean()
     final_combination = female_proportions.idxmas()
-    
-# QUESTION NO.4: WHO WAS THE FIRST WOMAN TO RECEIVE A NOBEL PRIZE, AND IN WHAT CATEGORY?
 
+    max_female_dict = {int(final_combination[0]): str(final_combination[1])}
+
+# QUESTION NO.4: WHO WAS THE FIRST WOMAN TO RECEIVE A NOBEL PRIZE, AND IN WHAT CATEGORY?
+    
+    female_winners = np_list[np_list['sex'] == 'Female'].sort_values(by='year')
+
+    first_woman_name = str(female_winners['full_name'].values[0])
+    first_woman_category = str(female_winners['category'].values[0])
+    
 # QUESTION NO.5: WHICH INDIVIDUALS OR ORGANIZATIONS HAVE WON MORE THAN ONE NOBEL PRIZE THROUGHOUT THE YEARS?
