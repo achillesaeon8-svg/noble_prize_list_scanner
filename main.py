@@ -25,9 +25,13 @@ def main():
 
     decade_usa_ratios = np_list.groupby('decade')['usa_born_winner'].mean()
     max_decade_usa = int(decade_usa_ratios.idxmax())
-    
+
 # QUESTION NO.3: WHICH DECADE AND NOBEL PRIZE CATEGORY COMBINATION AHD THE HIGHEST PROPORTION OF FEMALE LAUREATS?
 
+    np_list['is_female'] = np_list['sex'] == 'Female'
+    female_proportions = np_list.groupby(['decade', 'category'])['is_female'].mean()
+    final_combination = female_proportions.idxmas()
+    
 # QUESTION NO.4: WHO WAS THE FIRST WOMAN TO RECEIVE A NOBEL PRIZE, AND IN WHAT CATEGORY?
 
 # QUESTION NO.5: WHICH INDIVIDUALS OR ORGANIZATIONS HAVE WON MORE THAN ONE NOBEL PRIZE THROUGHOUT THE YEARS?
