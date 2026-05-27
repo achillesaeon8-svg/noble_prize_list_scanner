@@ -49,30 +49,42 @@ def main():
 # OUTPUTS SETTINGS
 
     print('=' * 120)
-    print("                                     EXAM RESULTS SUMMARY                    ")
+    print("                                                 EXAM RESULTS SUMMARY                    ")
     print("=" * 120)
 
-    print(f'# QUESTION NO.1: WHAT IS THE MOST AWARDED GENDER AND BIRTH COUNTRY')
+    print(f'QUESTION NO. 1: WHAT IS THE MOST AWARDED GENDER AND BIRTH COUNTRY')
 
     print(' ')
 
     print(f'  • Most Awarded Gender: {top_gender}')
 
     print(' ')
-    
+
     print(f'  • Most Awarded Birth Country: {top_country}\n')
 
-    print(f"QUESTION NO. 2")
-    print(f"  • Decade with Highest US Ratio: {max_decade_usa}\n")
+    print(f'QUESTION NO. 2: WHICH DECADE HAD THE HIGHEST RATIO OF US-BORN NOBEL PRIZE WINNERS TO TOTAL WINNERS IN ALL CATEGORIES?')
 
-    print(f"QUESTION NO. 3")
-    print(f"  • Highest Female Proportion Combo: {max_female_dict}\n")
+    print(' ')
 
-    print(f'QUESTION NO. 4')
+    print(f'  • Decade with Highest US Ratio: {max_decade_usa}\n')
+
+    print(f'QUESTION NO. 3: WHICH DECADE AND NOBEL PRIZE CATEGORY COMBINATION AHD THE HIGHEST PROPORTION OF FEMALE LAUREATS?')
+
+    print(' ')
+
+    print(f'  • Highest Female Proportion Combo: {max_female_dict}\n')
+
+    print(f'QUESTION NO. 4: WHO WAS THE FIRST WOMAN TO RECEIVE A NOBEL PRIZE, AND IN WHAT CATEGORY?')
+
+    print(' ')
+
     print(f'  • First Woman Winner: {first_woman_name}')
+
+    print(' ')
+
     print(f'  • Award Category: {first_woman_category}\n')
     
-    print(f'QUESTION NO.5: WHICH INDIVIDUALS OR ORGANIZATIONS HAVE WON MORE THAN ONE NOBEL PRIZE THROUGHOUT THE YEARS?')
+    print(f'QUESTION NO. 5: WHICH INDIVIDUALS OR ORGANIZATIONS HAVE WON MORE THAN ONE NOBEL PRIZE THROUGHOUT THE YEARS?')
 
     print(' ')
 
