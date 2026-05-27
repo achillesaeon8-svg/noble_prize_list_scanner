@@ -69,5 +69,8 @@ def main():
     print(f"QUESTION NO. 5")
     print(f"  • Total Repeat Winners Count: {len(repeat_list)}")
     print(f"  • Repeat Winners List: {repeat_list}")
-    
+
     print("=" * 100)
+
+if __name__ == '__main__':
+    main()
