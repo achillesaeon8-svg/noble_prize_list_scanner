@@ -30,7 +30,7 @@ def main():
 
     np_list['is_female'] = np_list['sex'] == 'Female'
     female_proportions = np_list.groupby(['decade', 'category'])['is_female'].mean()
-    final_combination = female_proportions.idxmas()
+    final_combination = female_proportions.idxmax()
 
     max_female_dict = {int(final_combination[0]): str(final_combination[1])}
 
